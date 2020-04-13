@@ -1,0 +1,7 @@
+<div class="main">
+    <!-- <p id="coin">Moeda escolhida</p><p id="value">Valor convertido</p> -->
+    <p class="style">Converter Libra em Real</p>
+    <input type="text" placeholder="Libra" value = "{{resultado | currency:'BRL'}}" (keyup) = "getLibra($event)" id="dolar" autofocus>
+    <span class="btn-trade">From</span>
+    <input type="text" placeholder="Real" value="{{ress | currency:'GBP'}}" (keyup) = "getReal($event)" id="real">
+</div>
