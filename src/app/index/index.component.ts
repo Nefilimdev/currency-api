@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
 /* import {MatSidenav} from '@angular/material/sidenav'; */
+import { ConversorService } from '../conversor.service';
 
 @Component({
   selector: 'app-index',
@@ -9,21 +10,67 @@ import { Component, OnInit, ViewChild} from '@angular/core';
 
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  dolar:any
+  dolarA:any
+  dolarC:any
+  dolarE:any
+  dolarL:any
+  ress:any
+  resultado:any
+  formatado:any
+  valor:any
+  coin:any
+  
 
-  ngOnInit(): void {
-  }
+   constructor(private currency: ConversorService) { }
 
-  /* @ViewChild('sidenav') sidenav: MatSidenav;
+    getCurrency(main){
+      this.currency.getValue(main).subscribe((data) =>{
+        this.coin = new Object(data)
+        this.dolar = this.coin.rates.BRL
+        console.log(this.coin.rates.BRL)
+      })
+    }
 
-  reason = '';
+    getCurrency1(main){
+      this.currency.getValue(main).subscribe((data) =>{
+         this.coin = new Object(data)
+        this.dolarA = this.coin.rates.BRL
+        console.log(this.coin.rates.BRL)
+      })
+    }
 
-  close(reason: string) {
-    this.reason = reason;
-    this.sidenav.close();
-  }
+    getCurrency2(main){
+      this.currency.getValue(main).subscribe((data) =>{
+         this.coin = new Object(data)
+        this.dolarC = this.coin.rates.BRL
+        console.log(this.coin.rates.BRL)
+      })
+    }
 
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
- */
+    getCurrency3(main){
+      this.currency.getValue(main).subscribe((data) =>{
+         this.coin = new Object(data)
+        this.dolarE = this.coin.rates.BRL
+        console.log(this.coin.rates.BRL)
+      })
+    }
+
+    getCurrency4(main){
+      this.currency.getValue(main).subscribe((data) =>{
+         this.coin = new Object(data)
+        this.dolarL = this.coin.rates.BRL
+        console.log(this.coin.rates.BRL)
+      })
+    }
+
+    ngOnInit():void {
+      this.getCurrency("USD")
+      this.getCurrency1("AUD")
+      this.getCurrency2("CAD")
+      this.getCurrency3("EUR")
+      this.getCurrency4("GBP")
+      }
+  
 }
 

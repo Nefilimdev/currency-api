@@ -30,7 +30,7 @@ export class EuroComponent implements OnInit {
 
     ngOnInit():void {
       this.getCurrency("EUR")
-    }
+      }
   
   getEuro(event){
     this.valor = event.target.value

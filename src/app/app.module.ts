@@ -12,6 +12,10 @@ import { IndexComponent } from './index/index.component';
 import { DolarComponent } from './dolar/dolar.component';
 import { BackgroundDirective } from './background.directive';
 import { from } from 'rxjs';
+import { GraphicComponent } from './graphic/graphic.component';
+// import { jqxChartModule } from 'jqwidgets-ng/jqxchart';
+
+
 
 @NgModule({
   declarations: [
@@ -24,6 +28,8 @@ import { from } from 'rxjs';
     DolarComponent,
     RoutingComponent,
     BackgroundDirective,
+    GraphicComponent,
+    // jqxChartModule,
     
   ],
   imports: [
