@@ -11,7 +11,7 @@ import { ConversorService } from './conversor.service';
 export class AppComponent {
   title = 'Conversor de Moedas';
 
- constructor(private currency: ConversorService){}
+  constructor(private currency: ConversorService) { }
 
   // ngOnInit():void {
   //   this.getCurrency("USD", "BRL")
@@ -28,5 +28,6 @@ export class AppComponent {
   //       }
   //     )
   //   }
+
 
 }
