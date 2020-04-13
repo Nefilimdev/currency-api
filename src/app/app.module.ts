@@ -13,7 +13,7 @@ import { DolarComponent } from './dolar/dolar.component';
 import { BackgroundDirective } from './background.directive';
 import { from } from 'rxjs';
 import { GraphicComponent } from './graphic/graphic.component';
-// import { jqxChartModule } from 'jqwidgets-ng/jqxchart';
+import { jqxChartModule } from 'jqwidgets-ng/jqxchart';
 
 
 
@@ -29,14 +29,14 @@ import { GraphicComponent } from './graphic/graphic.component';
     RoutingComponent,
     BackgroundDirective,
     GraphicComponent,
-    // jqxChartModule,
+    
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    
+    jqxChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
