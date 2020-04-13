@@ -13,7 +13,10 @@ import { DolarComponent } from './dolar/dolar.component';
 import { BackgroundDirective } from './background.directive';
 import { from } from 'rxjs';
 import { GraphicComponent } from './graphic/graphic.component';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2283d7217395622c7793273312b8320076cc84dc
 import { jqxChartModule } from 'jqwidgets-ng/jqxchart';
 
 
@@ -30,14 +33,23 @@ import { jqxChartModule } from 'jqwidgets-ng/jqxchart';
     RoutingComponent,
     BackgroundDirective,
     GraphicComponent,
+<<<<<<< HEAD
 
+=======
+    
+    
+>>>>>>> 2283d7217395622c7793273312b8320076cc84dc
   ],
 
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+<<<<<<< HEAD
     jqxChartModule
+=======
+    jqxChartModule,
+>>>>>>> 2283d7217395622c7793273312b8320076cc84dc
   ],
 
   providers: [],
