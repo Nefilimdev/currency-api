@@ -23,14 +23,14 @@ export class DolarComponent implements OnInit {
         this.coin = new Object(data)
         this.dolar = this.coin.rates.BRL
         console.log(this.coin.rates.BRL)
-      })
-        
-      
+      }) 
     }
 
     ngOnInit():void {
       this.getCurrency("USD")
     }
+
+
 
   getDolar(event){
     let valor = event.target.value
@@ -41,8 +41,6 @@ export class DolarComponent implements OnInit {
   getReal(event){
     this.valor = event.target.value
     this.resultado = this.valor / this.dolar
-    }
-
-    
+    } 
 
 }

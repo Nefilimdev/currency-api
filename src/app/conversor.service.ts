@@ -5,6 +5,7 @@ import { getLocaleDateFormat } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ConversorService {
 
   private baseUrl = 'https://api.exchangeratesapi.io/latest?base='
